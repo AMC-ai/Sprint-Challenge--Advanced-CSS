@@ -1,1 +1,32 @@
 // Mixins Here
+.heading1 {
+    color: #22283B;
+    font-size: 4rem;
+}
+
+.custom-btn(@width, @rem) {
+    display: block;
+    border-radius: 10px;
+    margin: 0 10px 20px;
+    padding: 6px 0;
+    background-color: @btn-bg-color;
+    color: @wild-sand;
+    cursor: pointer;
+    height: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    width: @width;
+    font-size: @rem;
+
+    &:hover {
+        background-color: @wild-sand;
+        color: @btn-bg-color;
+        margin: 0 10px 20px;
+        padding: 6px 0;
+        border: 1px double #e0e0e0;
+    }
+
+    //end of hover
+}
+
+//end of custom-btn
